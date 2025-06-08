@@ -179,22 +179,22 @@ GEM
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
     ast (2.4.3)
-    aws-eventstream (1.3.2)
-    aws-partitions (1.1103.0)
-    aws-sdk-codecommit (1.85.0)
-      aws-sdk-core (~> 3, >= 3.216.0)
+    aws-eventstream (1.4.0)
+    aws-partitions (1.1113.0)
+    aws-sdk-codecommit (1.86.0)
+      aws-sdk-core (~> 3, >= 3.225.0)
       aws-sigv4 (~> 1.5)
-    aws-sdk-core (3.224.0)
+    aws-sdk-core (3.225.1)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.992.0)
       aws-sigv4 (~> 1.9)
       base64
       jmespath (~> 1, >= 1.6.1)
       logger
-    aws-sdk-ecr (1.102.0)
-      aws-sdk-core (~> 3, >= 3.216.0)
+    aws-sdk-ecr (1.103.0)
+      aws-sdk-core (~> 3, >= 3.225.0)
       aws-sigv4 (~> 1.5)
-    aws-sigv4 (1.11.0)
+    aws-sigv4 (1.12.0)
       aws-eventstream (~> 1, >= 1.0.2)
     base64 (0.2.0)
     bigdecimal (3.1.9)
@@ -215,7 +215,7 @@ GEM
       rest-client (>= 1.8.0)
     domain_name (0.6.20240107)
     erb (5.0.1)
-    excon (1.2.5)
+    excon (1.2.7)
       logger
     faraday (2.13.1)
       faraday-net_http (>= 2.0, < 3.5)
@@ -320,7 +320,7 @@ GEM
     opentelemetry-instrumentation-excon (0.23.0)
       opentelemetry-api (~> 1.0)
       opentelemetry-instrumentation-base (~> 0.23.0)
-    opentelemetry-instrumentation-faraday (0.26.0)
+    opentelemetry-instrumentation-faraday (0.27.0)
       opentelemetry-api (~> 1.0)
       opentelemetry-instrumentation-base (~> 0.23.0)
     opentelemetry-instrumentation-http (0.24.0)
@@ -337,7 +337,7 @@ GEM
       opentelemetry-sdk (~> 1.3)
     opentelemetry-metrics-api (0.3.0)
       opentelemetry-api (~> 1.0)
-    opentelemetry-metrics-sdk (0.7.0)
+    opentelemetry-metrics-sdk (0.7.1)
       opentelemetry-api (~> 1.1)
       opentelemetry-metrics-api (~> 0.2)
       opentelemetry-sdk (~> 1.2)
@@ -446,7 +446,7 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
-    sorbet-runtime (0.5.12130)
+    sorbet-runtime (0.5.12163)
     stackprof (0.2.27)
     stringio (3.1.7)
     terminal-table (4.0.0)
@@ -468,7 +468,7 @@ GEM
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
     webrick (1.9.1)
-    zeitwerk (2.7.2)
+    zeitwerk (2.7.3)
 
 PLATFORMS
   ruby
@@ -508,7 +508,7 @@ DEPENDENCIES
   opentelemetry-exporter-otlp-logs (~> 0.2)
   opentelemetry-exporter-otlp-metrics (~> 0.4)
   opentelemetry-instrumentation-excon (~> 0.23)
-  opentelemetry-instrumentation-faraday (~> 0.26)
+  opentelemetry-instrumentation-faraday (~> 0.27)
   opentelemetry-instrumentation-http (~> 0.24)
   opentelemetry-instrumentation-net_http (~> 0.23)
   opentelemetry-logs-sdk (~> 0.2)
@@ -535,12 +535,12 @@ DEPENDENCIES
 CHECKSUMS
   addressable (2.8.7) sha256=462986537cf3735ab5f3c0f557f14155d778f4b43ea4f485a9deb9c8f7c58232
   ast (2.4.3) sha256=954615157c1d6a382bc27d690d973195e79db7f55e9765ac7c481c60bdb4d383
-  aws-eventstream (1.3.2) sha256=7e2c3a55ca70d7861d5d3c98e47daa463ed539c349caba22b48305b8919572d7
-  aws-partitions (1.1103.0) sha256=3138c7adf7f159ee93df76e5162cb75f3867784f2d2f162629cd9145ddec64f8
-  aws-sdk-codecommit (1.85.0) sha256=d28ffd21c778ef41c077182c675380ea9a6e7d41ff7339fba1ffe51c70c2e036
-  aws-sdk-core (3.224.0) sha256=c617aae3f43ba2bfe9f819c1a31c7c9dbda3e1d1a33c746c23c4dc15638817ac
-  aws-sdk-ecr (1.102.0) sha256=bc8194617752d47bda3c4576ee443e5745efa20ab24305483121b098cae85843
-  aws-sigv4 (1.11.0) sha256=50a8796991a862324442036ad7a395920572b84bb6cd29b945e5e1800e8da1db
+  aws-eventstream (1.4.0) sha256=116bf85c436200d1060811e6f5d2d40c88f65448f2125bc77ffce5121e6e183b
+  aws-partitions (1.1113.0) sha256=92f02ae8db6153c849f817b4049dcdf81b68e57557d2bdb0125fe4c5e9287d7e
+  aws-sdk-codecommit (1.86.0) sha256=fb1c77ad4d654e4930815883bd2a29aeb66d77609ddb6e95127adbff087bf411
+  aws-sdk-core (3.225.1) sha256=daaf302c33198b15f0a2b2f9b8e469d72175ed34caaa309ccb82384d8a47f181
+  aws-sdk-ecr (1.103.0) sha256=d3a6cb8b491da89676a5a30b1a2af9399ca2eb659d3a15d5aab2509ffe622954
+  aws-sigv4 (1.12.0) sha256=6e08f83fba19e64e671df460a342a36831a4bf336888cf3cbc3f6658cc108de5
   base64 (0.2.0) sha256=0f25e9b21a02a0cc0cea8ef92b2041035d39350946e8789c562b2d1a3da01507
   bigdecimal (3.1.9) sha256=2ffc742031521ad69c2dfc815a98e426a230a3d22aeac1995826a75dabfad8cc
   citrus (3.0.2) sha256=4ec2412fc389ad186735f4baee1460f7900a8e130ffe3f216b30d4f9c684f650
@@ -580,7 +580,7 @@ CHECKSUMS
   docker_registry2 (1.18.2) sha256=2ace909110fbca29d69dd1cdec99f555024aa6f6577798638139c8e8e556910f
   domain_name (0.6.20240107) sha256=5f693b2215708476517479bf2b3802e49068ad82167bcd2286f899536a17d933
   erb (5.0.1) sha256=760439803b36cc93eca8a266aab614614e588024a89bc30a62e78d98ff452c23
-  excon (1.2.5) sha256=ca040bb61bc0059968f34a17115a00d2db8562e3c0c5c5c7432072b551c85a9d
+  excon (1.2.7) sha256=3b3917dbdf0c65b8d872039fe2b37bf423da2f245ef05b0af07423027c4cfde5
   faraday (2.13.1) sha256=cc531eb5467e7d74d4517630fa96f1a7003647cbf20a9a3e067d098941217b75
   faraday-net_http (3.4.0) sha256=a1f1e4cd6a2cf21599c8221595e27582d9936819977bbd4089a601f24c64e54a
   faraday-retry (2.3.1) sha256=4004faa21f41fc5360d359bc79889fc58fb7fae0ce93bfb737a784ac76805c03
@@ -621,13 +621,13 @@ CHECKSUMS
   opentelemetry-exporter-otlp-metrics (0.4.1) sha256=76fca1ea47374f948efcb124e5db43070d451589eafdb575a166ff1e6018b867
   opentelemetry-instrumentation-base (0.23.0) sha256=b3e103ceea2ccf3e6269a394938a5bc239c80d113869fe2b2ac49ba27c3c1c50
   opentelemetry-instrumentation-excon (0.23.0) sha256=3ae5c57a05457f3bfea796ef815d261df94ffc4a83e4b691128044185a8a3f07
-  opentelemetry-instrumentation-faraday (0.26.0) sha256=8d17c3c14d5efc7e802c112b2c65326ba1dfe73336461f5c14c9c34e5d0d9281
+  opentelemetry-instrumentation-faraday (0.27.0) sha256=2376b11c04a69d5f6619066916f9373942c9d5b5a218ab4efdcf72d5e7de4564
   opentelemetry-instrumentation-http (0.24.0) sha256=94419a35e3ae4be4ba9a6b3a1992872def476b8fb764062feeeefff7fafca0ba
   opentelemetry-instrumentation-net_http (0.23.0) sha256=91123b721848f807e72157725771f680f70ecdbbdd58c05577713234ff1c0a80
   opentelemetry-logs-api (0.2.0) sha256=0e9241b9b53a315101a6a5f2efbfa80278a0d39f9220915871f8d6057c39b117
   opentelemetry-logs-sdk (0.2.0) sha256=5911963a80e8852d07bf0e4acf630dac4177af178a0fc0287a1878114c81c640
   opentelemetry-metrics-api (0.3.0) sha256=29f4b82cd5c5992884f4dc68d279a2cc114560f433c431bf9ef6f42d8d0f10b1
-  opentelemetry-metrics-sdk (0.7.0) sha256=acc0d0358c1f66a394a3b822483fa2498b6c815ab0b8a8bd19e0b958817da134
+  opentelemetry-metrics-sdk (0.7.1) sha256=a922fcb8bc3c3b4a52990438a34d74b6004a3c489c1039d3988610fac7c52432
   opentelemetry-registry (0.4.0) sha256=903fa6bfaa29eac1c1d73a4fdd29b850977b5353b84b8cdff11222c00ad2968f
   opentelemetry-sdk (1.8.0) sha256=fad979b4a6c7ad5b2f9f2bfde77ab5c0c6a9b81d5a6458becf5957e3fa371df7
   opentelemetry-semantic_conventions (1.11.0) sha256=89f209f588d48a8e38ca2205c24c6b4a35f3d2622c2f1854bd476c56290afdcb
@@ -671,7 +671,7 @@ CHECKSUMS
   simplecov (0.22.0) sha256=fe2622c7834ff23b98066bb0a854284b2729a569ac659f82621fc22ef36213a5
   simplecov-html (0.12.3) sha256=4b1aad33259ffba8b29c6876c12db70e5750cb9df829486e4c6e5da4fa0aa07b
   simplecov_json_formatter (0.1.4) sha256=529418fbe8de1713ac2b2d612aa3daa56d316975d307244399fa4838c601b428
-  sorbet-runtime (0.5.12130) sha256=851ff9f23474b8ece4bfa314f8f6108579fec9afce7e55aa18f878aecd0f5faf
+  sorbet-runtime (0.5.12163) sha256=894e30bd8561568e7bca0423d23db06eb9556ffc946ad5cfb4a08d539fa79125
   stackprof (0.2.27) sha256=aff6d28656c852e74cf632cc2046f849033dc1dedffe7cb8c030d61b5745e80c
   stringio (3.1.7) sha256=5b78b7cb242a315fb4fca61a8255d62ec438f58da2b90be66048546ade4507fa
   terminal-table (4.0.0) sha256=f504793203f8251b2ea7c7068333053f0beeea26093ec9962e62ea79f94301d2
@@ -683,7 +683,7 @@ CHECKSUMS
   vcr (6.3.1) sha256=37b56e157e720446a3f4d2d39919cabef8cb7b6c45936acffd2ef8229fec03ed
   webmock (3.25.1) sha256=ab9d5d9353bcbe6322c83e1c60a7103988efc7b67cd72ffb9012629c3d396323
   webrick (1.9.1) sha256=b42d3c94f166f3fb73d87e9b359def9b5836c426fc8beacf38f2184a21b2a989
-  zeitwerk (2.7.2) sha256=842e067cb11eb923d747249badfb5fcdc9652d6f20a1f06453317920fdcd4673
+  zeitwerk (2.7.3) sha256=b2e86b4a9b57d26ba68a15230dcc7fe6f040f06831ce64417b0621ad96ba3e85
 
 BUNDLED WITH
    2.6.3
