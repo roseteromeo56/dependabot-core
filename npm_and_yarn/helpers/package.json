@@ -21,9 +21,9 @@
     "patch-package": "^8.0.0"
   },
   "devDependencies": {
-    "eslint": "^9.28.0",
+    "eslint": "^9.30.0",
     "eslint-config-prettier": "^10.1.5",
     "jest": "^30.0.3",
-    "prettier": "^3.5.3"
+    "prettier": "^3.6.2"
   }
 }
