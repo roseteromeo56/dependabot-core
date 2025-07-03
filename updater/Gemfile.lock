@@ -199,7 +199,7 @@ GEM
     base64 (0.2.0)
     bigdecimal (3.2.2)
     citrus (3.0.2)
-    commonmarker (2.3.0)
+    commonmarker (2.3.1)
       rb_sys (~> 0.9)
     concurrent-ruby (1.3.5)
     crack (1.0.0)
@@ -235,7 +235,7 @@ GEM
       base64 (~> 0.2.0)
       httparty (~> 0.20)
       terminal-table (>= 1.5.1)
-    google-protobuf (4.31.0)
+    google-protobuf (4.31.1)
       bigdecimal
       rake (>= 13)
     googleapis-common-protos-types (1.20.0)
@@ -304,7 +304,7 @@ GEM
       opentelemetry-logs-sdk (~> 0.1)
       opentelemetry-sdk
       opentelemetry-semantic_conventions
-    opentelemetry-exporter-otlp-metrics (0.4.1)
+    opentelemetry-exporter-otlp-metrics (0.5.0)
       google-protobuf (>= 3.18, < 5.0)
       googleapis-common-protos-types (~> 1.3)
       opentelemetry-api (~> 1.1)
@@ -510,7 +510,7 @@ DEPENDENCIES
   octokit (~> 10.0)
   opentelemetry-exporter-otlp (~> 0.30)
   opentelemetry-exporter-otlp-logs (~> 0.2)
-  opentelemetry-exporter-otlp-metrics (~> 0.4)
+  opentelemetry-exporter-otlp-metrics (~> 0.5)
   opentelemetry-instrumentation-excon (~> 0.23)
   opentelemetry-instrumentation-faraday (~> 0.27)
   opentelemetry-instrumentation-http (~> 0.25)
@@ -548,7 +548,7 @@ CHECKSUMS
   base64 (0.2.0) sha256=0f25e9b21a02a0cc0cea8ef92b2041035d39350946e8789c562b2d1a3da01507
   bigdecimal (3.2.2) sha256=39085f76b495eb39a79ce07af716f3a6829bc35eb44f2195e2753749f2fa5adc
   citrus (3.0.2) sha256=4ec2412fc389ad186735f4baee1460f7900a8e130ffe3f216b30d4f9c684f650
-  commonmarker (2.3.0) sha256=74fb85e4ae59a9fc166dd1813ad791805d09dec1a4e79c81a7be0a6a8dc5dc63
+  commonmarker (2.3.1) sha256=8943ef0731a4205765b1ab8f25a7a9b9f62acb28b0054c7d60f06720a23cadc7
   concurrent-ruby (1.3.5) sha256=813b3e37aca6df2a21a3b9f1d497f8cbab24a2b94cab325bffe65ee0f6cbebc6
   crack (1.0.0) sha256=c83aefdb428cdc7b66c7f287e488c796f055c0839e6e545fec2c7047743c4a49
   csv (3.3.5) sha256=6e5134ac3383ef728b7f02725d9872934f523cb40b961479f69cf3afa6c8e73f
@@ -591,8 +591,13 @@ CHECKSUMS
   ffi (1.17.2) sha256=297235842e5947cc3036ebe64077584bff583cd7a4e94e9a02fdec399ef46da6
   ffi-compiler (1.3.2) sha256=a94f3d81d12caf5c5d4ecf13980a70d0aeaa72268f3b9cc13358bcc6509184a0
   flamegraph (0.9.5) sha256=a683020637ffa0e14a72640fa41babf14d926bfeaed87e31907cfd06ab2de8dc
+ dependabot/bundler/updater/prod-dependencies-f7940dd95d
+  gitlab (5.1.0) sha256=021c27807a98f379c0cfeda459327c026d3756dbd6531dc1479f0e3df03572c7
+  google-protobuf (4.31.1) sha256=022bc82931a0860a7f2ace41bd48e904c8e65032c1d5eefc33294b5edf9741f8
+
   gitlab (6.0.0) sha256=be8e096775b84fb331f9e91b201b4356c3159eec6b0c7c4e157c46a02305a93a
   google-protobuf (4.31.0) sha256=4db6fe6c92dd683aa9671432c38976685aaf9ba2f92450eebd63d76bcdbe4891
+ main
   googleapis-common-protos-types (1.20.0) sha256=5e374b06bcfc7e13556e7c0d87b99f1fa3d42de6396a1de3d8fc13aefb4dd07f
   gpgme (2.0.24) sha256=53eccd7042abb4fd5c78f30bc9ed075b1325e6450eab207f2f6a1e7e28ae3b64
   hashdiff (1.2.0) sha256=c984f13e115bfc9953332e8e83bd9d769cfde9944e2d54e07eb9df7b76e140b5
@@ -622,7 +627,7 @@ CHECKSUMS
   opentelemetry-common (0.22.0) sha256=ce5e96a0f838d67eb70a1d32e02bdbe7b8f41767bc71994d73b299a8b0c5878d
   opentelemetry-exporter-otlp (0.30.0) sha256=07cb0446bb782dfcf7cc27d2d6ebcf9aef1a4585b3f4952be6276a1e77d5ba97
   opentelemetry-exporter-otlp-logs (0.2.0) sha256=d665bd0320dbcaf4717faa728fd201d6490804bedeff76bde39e88e24dd44570
-  opentelemetry-exporter-otlp-metrics (0.4.1) sha256=76fca1ea47374f948efcb124e5db43070d451589eafdb575a166ff1e6018b867
+  opentelemetry-exporter-otlp-metrics (0.5.0) sha256=363da0c529275c6c76f55ea3b8e35c0186fb6611f3d74d2d8e7daae643fbdf92
   opentelemetry-instrumentation-base (0.23.0) sha256=b3e103ceea2ccf3e6269a394938a5bc239c80d113869fe2b2ac49ba27c3c1c50
   opentelemetry-instrumentation-excon (0.23.0) sha256=3ae5c57a05457f3bfea796ef815d261df94ffc4a83e4b691128044185a8a3f07
   opentelemetry-instrumentation-faraday (0.27.0) sha256=2376b11c04a69d5f6619066916f9373942c9d5b5a218ab4efdcf72d5e7de4564
