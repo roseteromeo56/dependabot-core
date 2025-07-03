@@ -1,4 +1,4 @@
-FROM docker.io/library/rust:1.88.0-bookworm AS rust
+FROM docker.io/library/rust@sha256:<digest> AS rust
 
 FROM ghcr.io/dependabot/dependabot-updater-core
 
