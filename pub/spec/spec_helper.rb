@@ -6,7 +6,18 @@ def common_dir
 end
 
 def require_common_spec(path)
-  require "#{common_dir}/spec/dependabot/#{path}"
+  spec_root = File.expand_path("spec/dependabot", common_dir)
+  requested_path = path.to_s
+
+  raise ArgumentError, "spec path must not be empty" if requested_path.empty?
+  raise ArgumentError, "spec path contains invalid characters" if requested_path.include?("\0")
+
+  resolved_path = File.expand_path(requested_path, spec_root)
+  unless resolved_path.start_with?("#{spec_root}/")
+    raise ArgumentError, "spec path must remain within #{spec_root}"
+  end
+
+  require resolved_path
 end
 
 def run_git(args, dir)
