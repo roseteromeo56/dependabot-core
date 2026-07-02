@@ -6,7 +6,22 @@ def common_dir
 end
 
 def require_common_spec(path)
-  require "#{common_dir}/spec/dependabot/#{path}"
+  case path
+  when "shared_examples_for_autoloading"
+    require "#{common_dir}/spec/dependabot/shared_examples_for_autoloading"
+  when "metadata_finders/shared_examples_for_metadata_finders"
+    require "#{common_dir}/spec/dependabot/metadata_finders/shared_examples_for_metadata_finders"
+  when "update_checkers/shared_examples_for_update_checkers"
+    require "#{common_dir}/spec/dependabot/update_checkers/shared_examples_for_update_checkers"
+  when "file_updaters/shared_examples_for_file_updaters"
+    require "#{common_dir}/spec/dependabot/file_updaters/shared_examples_for_file_updaters"
+  when "file_parsers/shared_examples_for_file_parsers"
+    require "#{common_dir}/spec/dependabot/file_parsers/shared_examples_for_file_parsers"
+  when "file_fetchers/shared_examples_for_file_fetchers"
+    require "#{common_dir}/spec/dependabot/file_fetchers/shared_examples_for_file_fetchers"
+  else
+    raise ArgumentError, "Invalid common spec path: #{path}"
+  end
 end
 
 def run_git(args, dir)
