@@ -5,7 +5,7 @@ def common_dir
   @common_dir ||= Gem::Specification.find_by_name("dependabot-common").gem_dir
 end
 
-def require_common_spec(path)
+def require_common_spec(path) dd/bits/harden-pub-spec-helper-require
   case path
   when "shared_examples_for_autoloading"
     require "#{common_dir}/spec/dependabot/shared_examples_for_autoloading"
@@ -22,6 +22,18 @@ def require_common_spec(path)
   else
     raise ArgumentError, "Invalid common spec path: #{path}"
   end
+  spec_root = File.expand_path("spec/dependabot", common_dir)
+  requested_path = path.to_s
+
+  raise ArgumentError, "spec path must not be empty" if requested_path.empty?
+  raise ArgumentError, "spec path contains invalid characters" if requested_path.include?("\0")
+
+  resolved_path = File.expand_path(requested_path, spec_root)
+  unless resolved_path.start_with?("#{spec_root}/")
+    raise ArgumentError, "spec path must remain within #{spec_root}"
+  end
+
+  require resolved_path main
 end
 
 def run_git(args, dir)
