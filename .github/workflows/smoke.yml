@@ -21,11 +21,11 @@ jobs:
     outputs:
       suites: ${{ steps.suites.outputs.suites }}
     steps:
-      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           submodules: recursive
 
-      - uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2
+      - uses: dorny/paths-filter@7b450fff21473bca461d4b92ce414b9d0420d706 # v4.0.2
         if: github.event_name != 'workflow_dispatch'
         id: changes
         with:
@@ -64,7 +64,7 @@ jobs:
       matrix:
         suite: ${{ fromJSON(needs.discover.outputs.suites) }}
     steps:
-      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           submodules: recursive
 
@@ -76,7 +76,7 @@ jobs:
 
       - name: Restore Smoke Test
         id: cache-smoke-test
-        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: smoke.yaml
           key: ${{ matrix.suite.sha }}-${{ matrix.suite.name }}
@@ -89,7 +89,7 @@ jobs:
 
       - name: Cache Smoke Test
         if: steps.cache-smoke-test.outputs.cache-hit != 'true'
-        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: smoke.yaml
           key: ${{ steps.cache-smoke-test.outputs.cache-primary-key }}
